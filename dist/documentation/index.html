@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <title>Lewis - Creative Portfolio HTML Template</title>
+  </head>
+  <body data-spy="scroll" data-target="#navbar-example">
+  	<header class="header">
+	<div class="container">
+		<h2>Lewis - Creative Portfolio HTML Template</h2>
+		<p class="text-muted">Design to attract, convert and<br> delight your customers</p>
+	</div>
+	</header>
+  	<div class="container-fluid">
+	  	<div class="row">
+	  		<nav id="navbar-example" class="col-12 col-md-3 col-xl-2 sidebar py-5">
+			  	<ul class="nav d-block">
+				  <li><a class="nav-link" href="#project">Project Structure</a>
+				  </li>
+				  <li><a class="nav-link" href="#flash">Home Flash</a>
+				  </li>
+				  <li><a class="nav-link" href="#piling">Home Parallax Piling<br> &amp; Home Parallax Horizontal</a>
+				  </li>
+				  <li><a class="nav-link" href="#zoom">Home Zoom Parallax</a>
+				  </li>
+				  <li><a class="nav-link" href="#3D">Home 3D Parallax</a>
+				  </li>
+				  <li><a class="nav-link" href="#video">Home Video</a>
+				  </li>
+				  <li><a class="nav-link" href="#minimal">Home Minimal</a>
+				  </li>
+				  <li><a class="nav-link" href="#filters">Filters</a>
+				  </li>
+				  <li><a class="nav-link" href="#carousels">Carousels</a>
+				  </li>
+				</ul>
+			</nav>
+		    <div class="col-12 col-md-9 col-xl-8 py-5 pl-md-5 content">
+			   	<div id="project">
+			   		<h2 class="mb-5">Project Structure</h2>
+			   		<div class="alert alert-danger" role="alert">Lewis will work correctly only on the web server!</div>
+				   	<p>The structure of the Lewis HTML template:</p>
+			        <ul>
+		              <li><b>js</b> - all common  scripts used on the pages, theme scripts included in <b>script.js</b> file</li>
+		              <li><b>css</b> - all common css used on the pages, theme styles included in <b>style.css</b> files</li>
+		              <li><b>img</b> - images, icons and backgrounds for the project</li>
+		              <li><b>fonts</b> - all icons used on the pages, included <b>Ionicons.woff</b> and <b>Socicon.woff</b> files</li>
+			          <li><b>favicons</b> - all favicons, favicons were generated here <a href="https://realfavicongenerator.net/">https://realfavicongenerator.net/</a></li>
+			        </ul>
+			        <h5 class="my-4">Head</h5>
+			        <img alt="" src="img/1.png">
+				
+		   		</div>
+		   		<div id="flash" class="my-5">
+		   			<h3 class="mb-4">Home Flash</h3>
+		   			<p>Home Flash works with <a href="http://scrollmagic.io/">ScrollMagic</a></p>
+		   			<p><img src="img/flash.png"></p>
+		   			<p>The initial position of the menu items is calculated as follows:<br>
+		   				the last element has the <b>top</b> parameter equal to 100% of the window height minus 80px: <b>top: calc(100% - 80px);</b>,<br>
+		   				that is, it will be pressed to the bottom of the window with a small indentation.<br>
+		   				Each prior element is assigned a <b>top</b> parameter 50px higher than the next: <b class="text-nowrap">top: calc(100% - 130px);</b> etc.
+		   			</p>
+		   			<p><img src="img/flash2.png"></p>
+		   			<p>When the page scrolling, the position of the menu items changes, each item in turn becomes active and moves to the top of the window.<br>
+		   				The first element is assigned a new value of the parameter <b class="text-nowrap">top: 130px;</b> (header height plus a low indent after header).<br>
+		   				Each next element is given a top parameter 50px more than the previous one: <b class="text-nowrap">top: 180px;</b> etc.
+		   			</p>
+		   			<p><img src="img/flash3.png"></p>
+		   			<p>The <b>duration</b> parameter for each menu item is calculated by the formula<br>
+		   			<b>Window height - initial item position - final item position</b>
+		   			<p><img src="img/flash4.png"></p>
+		   			
+		   		</div>
+		   		<div id="number" class="my-5">
+		   			<h3 class="mb-4">Number Counter</h3>
+		   			<p class="mb-5"><img src="img/counter2.png"></p>
+					<h5 class="my-4"><b>To change numbers, change this values:</b></h5>
+					<p><img src="img/counter.png"></p>
+		   			
+		   		</div>
+		   		<div id="piling" class="my-5">
+		   			<h3 class="mb-4">Home Parallax Piling<br> &amp; Home Parallax Horizontal</h3>
+		   			<p>Home parallax piling and parallax horizontal works with <a href="https://alvarotrigo.com/pagePiling/">jQuery PagePiling plugin</a></p>
+		   			<p><img src="img/piling.png"></p>
+		   			<p>To make white text in section add classes <b>slide-dark</b></p>
+	   				<p><img src="img/piling2.png"></p>
+		   			<p>To make white text in header add number of dark slides here:</p>
+	   				<p><img src="img/piling3.png"></p>
+		   		</div>
+		   		<div id="zoom" class="my-5">
+		   			<h3 class="mb-4">Home Zoom Parallax</h3>
+		   			<p>Home Zoom Parallax works with <a href="http://scrollmagic.io/">ScrollMagic</a></p>
+		   			<p><img src="img/zoomparallax.png"></p>
+		   			<p>Zoom parallax consists of three images:
+		   			<p><img src="img/zoomparallax2.png"></p>
+		   			<p>Text animation is created for these classes:</p>
+		  			<p><img src="img/zoomparallax3.png"></p>
+		  			<p>Go to <b>js</b> to change all animation code:</p>
+		  			<p><img src="img/zoomparallax4.png"></p>
+		   		</div>
+		   		<div id="3D" class="my-5">
+		   			<h3 class="mb-4">Home 3D Parallax</h3>
+		   			<p>Home 3D Parallax works with <a href="http://scrollmagic.io/">ScrollMagic</a></p>
+		   			<p><img src="img/3dparallax.png"></p>
+		   			<p>3D parallax consists of two images:
+		   			<p><img src="img/3dparallax2.png"></p>
+		  			<p>Go to <b>js</b> to change all animation code:</p>
+		  			<p><img src="img/3dparallax4.png"></p>
+		   		</div>
+		   		<div id="video" class="my-5">
+		   			<h3 class="mb-4">Home Video</h3>
+		   			<p>Home Video contains Vimeo video in background</p>
+		   			<p><img src="img/video.png"></p>
+		   			<p>The first item contains the video iframe that is shown by default.</p> 
+		   			<p><img src="img/video2.png"></p>
+		   			<p>To include each video, you must specify the following parameters:<br>
+		   			<b>background-image</b> - desktop background image before video uploading, better if this is the first frame (1920x1080px)<br>
+		   			<b>data-vimeo</b> - id video on Vimeo <a href="https://vimeo.com/230427450">https://vimeo.com/230427450</a><br>
+		   			<b>data-vimeo-width</b> - iframe width<br>
+		   			<b>data-vimeo-height</b> - iframe height
+		   			</p>
+		   			<p><img src="img/video3.png"></p>
+		   			<p><b>Video-text-container</b> contains titles, descriptions and mobile backgrounds (960x540px)</p>
+		   			<p><img src="img/video4.png"></p>
+		   		</div>
+		   		<div id="minimal" class="my-5">
+		   			<h3 class="mb-4">Home Minimal</h3>
+		   			<p>To achieve a hover effect, the contents of elements <b>minimal-item-content</b> are duplicated in <b>promo-minimal</b> and <b>promo-minimal-hover</b> containers</p>
+		   			<p><img src="img/minimal2.png"></p>
+		   		</div>
+		   		<div id="filters" class="my-5">
+		   			<h3 class="mb-4">Filters</h3>
+		   			<p><img src="img/filter.png"></p>
+		   			<p>Each filter has a data attribute</p>
+		   			<p><img src="img/filter2.png"></p>
+	   				<p>Each item has the same data-filters</p>
+		   			<p><img src="img/filter3.png"></p>
+		   		</div>
+		   		<div id="carousels" class="my-5">
+		   			<h3 class="mb-4">Carousels</h3>
+		   			<p>Carousels works with <a href="https://owlcarousel2.github.io/OwlCarousel2/">Owl Carousel</a>. It's easy to customize, see documentation</p>
+		   			<p><img src="img/carousels.png"></p>
+		   		</div>
+			</div>
+		</div>
+	</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script  src="js/prism.js"></script>
+    <script  src="js/script.js"></script> 
+  </body>
+</html>
