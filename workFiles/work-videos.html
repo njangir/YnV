@@ -6,7 +6,7 @@
     <meta name="description" content="Lewis">
     <meta name="author" content="Paul, Logan Cee">
 
-    <title>Lewis - Work Metro</title>
+    <title>Lewis - Videos</title>
 
     <!-- CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -287,10 +287,10 @@
                 <li class="active"><a data-text="Works" data-toggle="collapse" href="#menuWorks" role="button" aria-expanded="true" aria-controls="menuWorks">Works</a>
                   <div class="collapse show" id="menuWorks" data-parent="#accordion">
                     <ul>
-                      <li class="active"><a href="work-graphic.html" class="animsition-link" data-animsition-out-class="fade-out" data-text="Graphic and Design">Graphic and Design</a></li>
+                      <li><a href="work-graphic.html" class="animsition-link" data-animsition-out-class="fade-out" data-text="Graphic and Design">Graphic and Design</a></li>
                       <li><a href="work-3d.html" class="animsition-link" data-animsition-out-class="fade-out" data-text="Motion Picture/3D Visualization">Motion Picture/3D Visualization</a></li>
                       <li><a href="work-web.html" class="animsition-link" data-animsition-out-class="fade-out" data-text="Web Design and Development">Web Design and Development</a></li>
-                      <li><a href="work-videos.html" class="animsition-link" data-animsition-out-class="fade-out" data-text="Videos">Videos</a></li>
+                      <li class="active"><a href="work-videos.html" class="animsition-link" data-animsition-out-class="fade-out" data-text="Videos">Videos</a></li>
                     </ul>
                   </div>
                 </li>
@@ -325,18 +325,18 @@
             <div class="row justify-content-md-center">
               <div class="col-lg-10">
                 <h3 class="section-item-title-xs">featured works</h3>
-                <h1 class="h2-flash font-abril">Graphic & Design</h1>
-                <div class="lead lead-lg">We specialize in crafting visually compelling assets that elevate your brand and communicate your message with clarity. From minimalist logotypes to full campaign visuals, our design team blends creativity with strategic intent to deliver:</div>
+                <h1 class="h2-flash font-abril">Video Production</h1>
+                <div class="lead lead-lg">We create compelling video content that tells your story and engages your audience across all platforms. From concept to final cut, our video production team delivers professional results that drive engagement and results:</div>
                 <div class="mt80">
-                  <h3 class="mb40 fs30 font-libre"><strong>Our Design Services</strong></h3>
+                  <h3 class="mb40 fs30 font-libre"><strong>Our Video Services</strong></h3>
                   <div class="fs18 lh-md">
                     <ul class="mb30 text-grey">
-                      <li><strong>Logo Systems</strong>: Timeless, scalable designs tailored to your brand identity.</li>
-                      <li><strong>Print Collateral</strong>: Brochures, flyers, posters, and packaging that drive engagement.</li>
-                      <li><strong>Digital Assets</strong>: Social media graphics, UI elements, and promotional banners.</li>
-                      <li><strong>Illustration & Concept Art</strong>: Custom visuals that bring ideas to life across media.</li>
+                      <li><strong>Corporate Videos</strong>: Professional videos that showcase your company and services.</li>
+                      <li><strong>Marketing Videos</strong>: Engaging promotional content for social media and advertising.</li>
+                      <li><strong>Product Demos</strong>: Clear, compelling demonstrations of your products and features.</li>
+                      <li><strong>Event Coverage</strong>: Professional recording and editing of conferences, meetings, and events.</li>
                     </ul>
-                    <p class="mb30 text-grey">Whether you're launching a startup or refreshing an established brand, our design approach ensures consistency, impact, and user resonance.</p>
+                    <p class="mb30 text-grey">From pre-production planning to post-production editing, we handle every aspect of video creation to deliver content that resonates with your target audience and achieves your business goals.</p>
                   </div>
                 </div>
                 <br/>
@@ -444,8 +444,8 @@
     <!-- Custom script for dynamic content -->
     <script>
     $(document).ready(function() {
-        // Filter Graphic items only
-        const graphicItems = combinedJsonImages.filter(item => item.page === 'Graphic');
+        // Filter Videos items only
+        const graphicItems = combinedJsonImages.filter(item => item.page === 'Videos');
         
         // Get unique categories
         const categories = [...new Set(graphicItems.map(item => item.category))];

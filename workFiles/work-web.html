@@ -6,7 +6,7 @@
     <meta name="description" content="Lewis">
     <meta name="author" content="Paul, Logan Cee">
 
-    <title>Lewis - Work Metro</title>
+    <title>Lewis - Web Design</title>
 
     <!-- CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -20,6 +20,225 @@
 
     <!-- Main CSS -->
     <link href="../css/style.css" rel="stylesheet">
+    
+    <!-- Custom CSS for dynamic content -->
+    <style>
+    /* Override problematic hover animations */
+    .project-link:hover .project-photo img {
+        transform: none !important;
+        opacity: 1 !important;
+    }
+    
+    /* Simple project item layout */
+    .project-item-simple {
+        background: #f8f9fa;
+        border-radius: 8px;
+        border: 1px solid #e9ecef;
+        overflow: hidden;
+        transition: transform 0.2s ease;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    .project-item-simple:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        border-color: #dee2e6;
+    }
+    
+    .project-photo {
+        width: 100%;
+        aspect-ratio: 4/3; /* Default aspect ratio */
+        overflow: hidden;
+        position: relative;
+        /* Fallback for browsers without aspect-ratio support */
+        height: 250px;
+    }
+    
+    /* Modern browsers with aspect-ratio support */
+    @supports (aspect-ratio: 1) {
+        .project-photo {
+            height: auto;
+        }
+    }
+    
+    .project-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: none !important;
+        display: block;
+    }
+    
+    /* Handle different aspect ratios based on image dimensions */
+    .project-photo[data-aspect="portrait"] {
+        aspect-ratio: 3/4;
+    }
+    
+    .project-photo[data-aspect="square"] {
+        aspect-ratio: 1/1;
+    }
+    
+    .project-photo[data-aspect="landscape"] {
+        aspect-ratio: 16/9;
+    }
+    
+    .project-photo[data-aspect="wide"] {
+        aspect-ratio: 21/9;
+    }
+    
+    .project-details {
+        padding: 20px;
+        background: white;
+    }
+    
+    .project-date {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 8px;
+        font-weight: 500;
+    }
+    
+    .project-title {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 6px;
+        color: #333;
+        line-height: 1.3;
+    }
+    
+    .project-description {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 8px;
+        line-height: 1.4;
+        font-style: italic;
+    }
+    
+    .project-category {
+        font-size: 14px;
+        color: #888;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    
+    /* Masonry Grid Layout */
+    .project-grid-container {
+        column-count: 2;
+        column-gap: 20px;
+        margin-top: 40px;
+    }
+    
+    /* Medium screens - 3 columns */
+    @media (min-width: 768px) {
+        .project-grid-container {
+            column-count: 3;
+            column-gap: 30px;
+        }
+    }
+    
+    /* Large screens - 4 columns */
+    @media (min-width: 1200px) {
+        .project-grid-container {
+            column-count: 4;
+            column-gap: 40px;
+        }
+    }
+    
+    /* Ensure grid items break properly in columns */
+    .grid-item {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        margin-bottom: 20px;
+        display: inline-block;
+        width: 100%;
+    }
+    
+    /* Adjust margins for different screen sizes */
+    @media (min-width: 768px) {
+        .grid-item {
+            margin-bottom: 30px;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        .grid-item {
+            margin-bottom: 40px;
+        }
+    }
+    
+    /* Remove old grid item styling - now handled by masonry layout */
+    
+    /* Remove any conflicting styles */
+    .project-link {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .project-link:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    /* Fancybox customization */
+    .fancybox-container {
+        z-index: 9999;
+    }
+    
+    .fancybox-bg {
+        background: rgba(0, 0, 0, 0.9);
+    }
+    
+    .fancybox-caption {
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    
+    /* Ensure project links are clickable */
+    .project-link {
+        cursor: pointer;
+        display: block;
+    }
+    
+    .project-link:hover .project-item-simple {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    
+    /* External link button styling */
+    .external-link-btn {
+        display: inline-block;
+        margin-top: 12px;
+        padding: 8px 16px;
+        background: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        transition: all 0.2s ease;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .external-link-btn:hover {
+        background: #0056b3;
+        color: white;
+        text-decoration: none;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 8px rgba(0,123,255,0.3);
+    }
+    
+    .external-link-btn:active {
+        transform: translateY(0);
+    }
+    </style>
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
@@ -28,13 +247,12 @@
     <link rel="manifest" href="../favicon/site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-
   </head>
 
   <body class="theme-orange fixed-footer fixed-footer-lg">
     <div class="animsition">
       <div class="wrapper">
-        <header id="header" class="header header-fixed">
+        <header id="header" class="header header-fixed bg-white">
           <div class="container-fluid clearfix">
             <div class="brand">
               <a href="../index.html">
@@ -69,10 +287,10 @@
                 <li class="active"><a data-text="Works" data-toggle="collapse" href="#menuWorks" role="button" aria-expanded="true" aria-controls="menuWorks">Works</a>
                   <div class="collapse show" id="menuWorks" data-parent="#accordion">
                     <ul>
-                      <li><a href="work-graphic.html" class="animsition-link" data-animsition-out-class="fade-out" data-text="Graphic & Design">Graphic & Design</a></li>
-                      <li><a href="#" class="animsition-link" data-animsition-out-class="fade-out" data-text="X1">X1</a></li>
+                      <li><a href="work-graphic.html" class="animsition-link" data-animsition-out-class="fade-out" data-text="Graphic and Design">Graphic and Design</a></li>
+                      <li><a href="work-3d.html" class="animsition-link" data-animsition-out-class="fade-out" data-text="Motion Picture/3D Visualization">Motion Picture/3D Visualization</a></li>
                       <li class="active"><a href="work-web.html" class="animsition-link" data-animsition-out-class="fade-out" data-text="Web Design and Development">Web Design and Development</a></li>
-                      <li><a href="#" class="animsition-link" data-animsition-out-class="fade-out" data-text="X1">X1</a></li>
+                      <li><a href="work-videos.html" class="animsition-link" data-animsition-out-class="fade-out" data-text="Videos">Videos</a></li>
                     </ul>
                   </div>
                 </li>
@@ -107,128 +325,30 @@
             <div class="row justify-content-md-center">
               <div class="col-lg-10">
                 <h3 class="section-item-title-xs">featured works</h3>
-                <h1 class="h2-flash font-abril">Web Designing & Development
-                </h1>
-                <div class="lead lead-lg">
-                  Keeping solution as the goal, we build the best tool for your online presence and purpose. Helping us with the development is our experienced team of developers in almost all technology stacks.
-                </div>
+                <h1 class="h2-flash font-abril">Web Design & Development</h1>
+                <div class="lead lead-lg">We create modern, responsive websites that deliver exceptional user experiences and drive business growth. From concept to deployment, our development team combines cutting-edge technology with strategic design to build:</div>
                 <div class="mt80">
-                  <h3 class="mb40 fs30 font-libre"><strong>What we build on web?</strong></h3>
+                  <h3 class="mb40 fs30 font-libre"><strong>Our Web Services</strong></h3>
                   <div class="fs18 lh-md">
-                    <p class="mb30 text-grey">Here are few things we can help you with on Web:</p>
-                    <ul class="base-list">
-                      <li class="wow fadeInUp" data-wow-delay=".2s" data-wow-duration=".5s" data-wow-offset="50" style="visibility: visible; animation-duration: 0.5s; animation-delay: 0.2s; animation-name: fadeInUp;">Develop easy-to-find and easy-to-navigate mobile friendly website</li>
-                      <li class="wow fadeInUp" data-wow-delay=".2s" data-wow-duration=".5s" data-wow-offset="50" style="visibility: visible; animation-duration: 0.5s; animation-delay: 0.2s; animation-name: fadeInUp;">Build UI/UX including user studies and testing.</li>
-                      <li class="wow fadeInUp" data-wow-delay=".2s" data-wow-duration=".5s" data-wow-offset="50" style="visibility: visible; animation-duration: 0.5s; animation-delay: 0.2s; animation-name: fadeInUp;">Deploy your apps on network </li>
+                    <ul class="mb30 text-grey">
+                      <li><strong>Responsive Websites</strong>: Mobile-first designs that work perfectly across all devices.</li>
+                      <li><strong>E-commerce Solutions</strong>: Online stores with secure payment processing and inventory management.</li>
+                      <li><strong>Web Applications</strong>: Custom web apps that streamline business processes and enhance productivity.</li>
+                      <li><strong>UI/UX Design</strong>: Intuitive interfaces that engage users and drive conversions.</li>
                     </ul>
+                    <p class="mb30 text-grey">From startups to enterprise solutions, we build websites that not only look great but perform exceptionally, ensuring your digital presence drives real business results.</p>
                   </div>
                 </div>
                 <br/>
-                <ul class="nav nav-inline parallax-link a-grid-filter">
+                <ul class="nav nav-inline parallax-link a-grid-filter" id="category-filters">
                   <li class="nav-item active"><a data-filter="*" data-text="All">All</a></li>
-                  <li class="nav-item"><a data-filter=".category-web" data-text="Web Design">Web Design</a></li>
-                  <li class="nav-item"><a data-filter=".category-branding" data-text="Branding">Branding</a></li>
-                  <li class="nav-item"><a data-filter=".category-animation" data-text="Animation">Animation</a></li>
-                  <li class="nav-item"><a data-filter=".category-mobile" data-text="Mobile Design">Mobile Design</a></li>
-                  <li class="nav-item"><a data-filter=".category-photography" data-text="Photography">Photography</a></li>
+                  <!-- Dynamic categories will be populated here -->
                 </ul>
               </div>
             </div>
 
-            <div class="project-list-metro a-grid row">
-              <div class="grid-item category-mobile category-animation col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".1s">
-                <a href="../single-project-branding.html">
-                  <div class="project-item" style="background-color:#e96437;">
-                    <div class="project-metro-photo"><img src="../img/social/social5.jpg" alt="" /></div>
-                    <div class="project-metro-date">2018</div>
-                    <div class="project-metro-detail">
-                      <div class="project-metro-category">Mobile App, animation</div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="grid-item category-web category-branding col-md-6 col-lg-8 wow fadeInUp" data-wow-delay=".3s">
-                <a href="../single-project-branding.html">
-                  <div class="project-item" style="background-color:#191a1e;">
-                    <div class="project-metro-photo"><img src="../img/social/social5.jpg" alt="" /></div>
-                    <div class="project-metro-date">2018</div>
-                    <div class="project-metro-detail">
-                      <div class="project-metro-category">Branding <span class="divider">&bull;</span> Web Design</div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="grid-item category-web col-lg-12 wow fadeInUp" data-wow-delay=".2s">
-                <a href="../single-project-web-design.html">
-                  <div class="project-item" style="background-color:#2b1770;">
-                    <div class="project-metro-photo"><img src="../img/pic64.jpg" alt="" /></div>
-                    <div class="project-metro-date">2018</div>
-                    <div class="project-metro-detail">
-                      <div class="project-metro-category">Website</div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="grid-item category-photography category-branding category-web col-md-6 col-lg-8 wow fadeInUp" data-wow-delay=".1s">
-                <a href="../single-project-photography.html">
-                  <div class="project-item" style="background-color:#819823;">
-                    <div class="project-metro-photo"><img src="../img/pic65.jpg" alt="" /></div>
-                    <div class="project-metro-date">2018</div>
-                    <div class="project-metro-detail">
-                      <h2 class="project-metro-title font-abril">Boranito Skate Store Online</h2>
-                      <div class="project-metro-category">Website, Branding, photography</div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="grid-item category-branding category-animation col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
-                <a href="../single-project-branding.html">
-                  <div class="project-item" style="background-color:#b18e36;">
-                    <div class="project-metro-photo"><img src="../img/pic66.jpg" alt="" /></div>
-                    <div class="project-metro-date">2018</div>
-                    <div class="project-metro-detail">
-                      <h2 class="project-metro-title font-abril">Rick Meyeres</h2>
-                      <div class="project-metro-category">Branding, Motion</div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="grid-item category-branding col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".1s">
-                <a href="../single-project-branding.html">
-                  <div class="project-item" style="background-color:#fa8d18;">
-                    <div class="project-metro-photo"><img src="../img/pic67.jpg" alt="" /></div>
-                    <div class="project-metro-date">2018</div>
-                    <div class="project-metro-detail">
-                      <h2 class="project-metro-title font-abril">ICO Bottle Opener</h2>
-                      <div class="project-metro-category">Branding</div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="grid-item category-mobile category-animation col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
-                <a href="../single-project-mobile-app.html">
-                  <div class="project-item" style="background-color:#846d96;">
-                    <div class="project-metro-photo"><img src="../img/pic68.jpg" alt="" /></div>
-                    <div class="project-metro-date">2018</div>
-                    <div class="project-metro-detail">
-                      <h2 class="project-metro-title font-abril">Brole Movies App</h2>
-                      <div class="project-metro-category">Mobile App, animation</div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="grid-item category-mobile category-animation col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".5s">
-                <a href="../single-project-mobile-app.html">
-                  <div class="project-item" style="background-color:#56362e;">
-                    <div class="project-metro-photo"><img src="../img/pic69.jpg" alt="" /></div>
-                    <div class="project-metro-date">2018</div>
-                    <div class="project-metro-detail">
-                      <h2 class="project-metro-title font-abril">Brole Movies App</h2>
-                      <div class="project-metro-category">Mobile App, animation</div>
-                    </div>
-                  </div>
-                </a>
-              </div>
+            <div class="project-grid-container" id="project-grid">
+              <!-- Dynamic project items will be populated here -->
             </div>
 
             <div class="more more-lg more-total-lg text-center"><a href="#" class="underline">More project</a></div>
@@ -317,6 +437,285 @@
     <script src="../js/jquery.viewport.js"></script>
     <script src="../js/jquery.countdown.min.js"></script>
     <script src="../js/script.js"></script>
+    
+    <!-- Include combined JSON data -->
+    <script src="../combined-json-images.js"></script>
+    
+    <!-- Custom script for dynamic content -->
+    <script>
+    $(document).ready(function() {
+        // Filter Web Design items only
+        const graphicItems = combinedJsonImages.filter(item => item.page === 'Web Design');
+        
+        // Get unique categories
+        const categories = [...new Set(graphicItems.map(item => item.category))];
+        
+        // Populate category filters
+        const categoryFilters = $('#category-filters');
+        categories.forEach(category => {
+            const categoryClass = 'category-' + category.toLowerCase().replace(/\s+/g, '-');
+            const categoryText = category;
+            categoryFilters.append(`
+                <li class="nav-item">
+                    <a data-filter=".${categoryClass}" data-text="${categoryText}">${categoryText}</a>
+                </li>
+            `);
+        });
+        
+        // Sort graphic items by date (latest first)
+        graphicItems.sort((a, b) => new Date(b.date) - new Date(a.date));
+        
+        // Get project grid element
+        const projectGrid = $('#project-grid');
+        
+        // Pagination settings
+        const itemsPerPage = 12; // Show 12 items initially
+        let currentPage = 1;
+        const totalItems = graphicItems.length;
+        const totalPages = Math.ceil(totalItems / itemsPerPage);
+        let currentFilteredItems = graphicItems; // Track currently filtered items
+        
+        // Function to show items for current page
+        function showItemsForPage(page) {
+            const startIndex = (page - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const itemsToShow = graphicItems.slice(startIndex, endIndex);
+            
+            // Only clear existing items if it's the first page
+            if (page === 1) {
+                projectGrid.empty();
+            }
+            
+            // Add items for current page
+            itemsToShow.forEach((item, index) => {
+                const categoryClass = 'category-' + item.category.toLowerCase().replace(/\s+/g, '-');
+                const imagePath = '../image/' + item.link;
+                const year = item.date.split('-')[0];
+                
+                const projectItem = `
+                    <div class="grid-item ${categoryClass}">
+                        <a href="${imagePath}" class="project-link" data-fancybox="gallery" data-caption="${item.name} - ${item.description || 'Professional design solution'}">
+                            <div class="project-item-simple">
+                                <div class="project-photo" data-aspect="auto">
+                                    <img src="${imagePath}" alt="${item.name}" onload="detectAspectRatio(this)" />
+                                </div>
+                                <div class="project-details">
+                                    <div class="project-date">${year}</div>
+                                    <h3 class="project-title">${item.name}</h3>
+                                    <div class="project-description">${item.description || 'Professional design solution'}</div>
+                                        <div class="project-category">${item.category}</div>
+                                        ${item.external_link ? `<a href="${item.external_link}" target="_blank" class="external-link-btn">View Project</a>` : ''}
+                                    </div>
+                            </div>
+                        </a>
+                    </div>
+                `;
+                projectGrid.append(projectItem);
+            });
+            
+            // Update "More project" link visibility
+            updateMoreProjectLink();
+        }
+        
+        // Function to update "More project" link visibility
+        function updateMoreProjectLink() {
+            const moreLink = $('.more.more-lg.more-total-lg');
+            const currentTotalPages = Math.ceil(currentFilteredItems.length / itemsPerPage);
+            if (currentPage < currentTotalPages) {
+                moreLink.show();
+            } else {
+                moreLink.hide();
+            }
+        }
+        
+        // Load initial page
+        showItemsForPage(currentPage);
+        
+        // Handle "More project" link click
+        $('.more.more-lg.more-total-lg a').on('click', function(e) {
+            e.preventDefault();
+            const currentTotalPages = Math.ceil(currentFilteredItems.length / itemsPerPage);
+            if (currentPage < currentTotalPages) {
+                currentPage++;
+                
+                // Load additional items (don't replace existing ones)
+                const startIndex = (currentPage - 1) * itemsPerPage;
+                const endIndex = startIndex + itemsPerPage;
+                const itemsToShow = currentFilteredItems.slice(startIndex, endIndex);
+                
+                // Add new items to existing grid
+                itemsToShow.forEach((item, index) => {
+                    const categoryClass = 'category-' + item.category.toLowerCase().replace(/\s+/g, '-');
+                    const imagePath = '../image/' + item.link;
+                    const year = item.date.split('-')[0];
+                    
+                    const projectItem = `
+                        <div class="grid-item ${categoryClass}">
+                            <a href="${imagePath}" class="project-link" data-fancybox="gallery" data-caption="${item.name} - ${item.description || 'Professional design solution'}">
+                                <div class="project-item-simple">
+                                    <div class="project-photo" data-aspect="auto">
+                                        <img src="${imagePath}" alt="${item.name}" onload="detectAspectRatio(this)" />
+                                    </div>
+                                    <div class="project-details">
+                                        <div class="project-date">${year}</div>
+                                        <h3 class="project-title">${item.name}</h3>
+                                        <div class="project-description">${item.description || 'Professional design solution'}</div>
+                                        <div class="project-category">${item.category}</div>
+                                        ${item.external_link ? `<a href="${item.external_link}" target="_blank" class="external-link-btn">View Project</a>` : ''}
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    `;
+                    projectGrid.append(projectItem);
+                });
+                
+                // Update "More project" link visibility
+                updateMoreProjectLink();
+                
+                // Initialize Fancybox for new items (only if not already initialized)
+                if (!$('[data-fancybox="gallery"]').hasClass('fancybox-initialized')) {
+                    $('[data-fancybox="gallery"]').fancybox({
+                        buttons: [
+                            "zoom",
+                            "slideShow",
+                            "thumbs",
+                            "close"
+                        ],
+                        loop: true,
+                        protect: true,
+                        animationEffect: "fade",
+                        transitionEffect: "slide",
+                        thumbs: {
+                            autoStart: false
+                        },
+                        touch: {
+                            vertical: true,
+                            momentum: true
+                        }
+                    }).addClass('fancybox-initialized');
+                }
+            }
+        });
+        
+        // Function to detect and set aspect ratio
+        window.detectAspectRatio = function(img) {
+            const container = img.parentElement;
+            const aspectRatio = img.naturalWidth / img.naturalHeight;
+            
+            if (aspectRatio > 1.5) {
+                container.setAttribute('data-aspect', 'wide');
+            } else if (aspectRatio > 1.2) {
+                container.setAttribute('data-aspect', 'landscape');
+            } else if (aspectRatio < 0.8) {
+                container.setAttribute('data-aspect', 'portrait');
+            } else if (aspectRatio > 0.9 && aspectRatio < 1.1) {
+                container.setAttribute('data-aspect', 'square');
+            } else {
+                container.setAttribute('data-aspect', 'default');
+            }
+        };
+        
+        // Initialize Fancybox for image popups (only once)
+        if (!$('[data-fancybox="gallery"]').hasClass('fancybox-initialized')) {
+            $('[data-fancybox="gallery"]').fancybox({
+                buttons: [
+                    "zoom",
+                    "slideShow",
+                    "thumbs",
+                    "close"
+                ],
+                loop: true,
+                protect: true,
+                animationEffect: "fade",
+                transitionEffect: "slide",
+                thumbs: {
+                    autoStart: false
+                },
+                touch: {
+                    vertical: true,
+                    momentum: true
+                }
+            }).addClass('fancybox-initialized');
+        }
+        
+        // Implement CSS Grid filtering with pagination
+        $('.a-grid-filter a').on('click', function() {
+            $(this).parents('.a-grid-filter').find('.active').removeClass('active');
+            $(this).parent().addClass('active');
+            var filterValue = $(this).attr('data-filter');
+            
+            // Reset to first page when filtering
+            currentPage = 1;
+            
+            // Filter items based on category
+            let filteredItems = graphicItems;
+            if (filterValue !== '*') {
+                // Remove the dot from filter value and convert to category name
+                const categoryClass = filterValue.replace('.', '');
+                filteredItems = graphicItems.filter(item => {
+                    const itemCategoryClass = 'category-' + item.category.toLowerCase().replace(/\s+/g, '-');
+                    return itemCategoryClass === categoryClass;
+                });
+                console.log('Filtering by:', categoryClass, 'Found items:', filteredItems.length);
+            }
+            
+            // Store filtered items for pagination
+            currentFilteredItems = filteredItems;
+            
+            // Update total pages based on filtered items
+            const filteredTotalPages = Math.ceil(filteredItems.length / itemsPerPage);
+            
+            // Show items for current page with filtered data
+            showFilteredItemsForPage(currentPage, filteredItems, filteredTotalPages);
+        });
+        
+        // Function to show filtered items for current page
+        function showFilteredItemsForPage(page, items, totalPages) {
+            const startIndex = (page - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const itemsToShow = items.slice(startIndex, endIndex);
+            
+            // Always clear existing items when filtering (start fresh)
+            projectGrid.empty();
+            
+            // Add items for current page
+            itemsToShow.forEach((item, index) => {
+                const categoryClass = 'category-' + item.category.toLowerCase().replace(/\s+/g, '-');
+                const imagePath = '../image/' + item.link;
+                const year = item.date.split('-')[0];
+                
+                const projectItem = `
+                    <div class="grid-item ${categoryClass}">
+                        <a href="${imagePath}" class="project-link" data-fancybox="gallery" data-caption="${item.name} - ${item.description || 'Professional design solution'}">
+                            <div class="project-item-simple">
+                                <div class="project-photo" data-aspect="auto">
+                                    <img src="${imagePath}" alt="${item.name}" onload="detectAspectRatio(this)" />
+                                </div>
+                                <div class="project-details">
+                                    <div class="project-date">${year}</div>
+                                    <h3 class="project-title">${item.name}</h3>
+                                    <div class="project-description">${item.description || 'Professional design solution'}</div>
+                                        <div class="project-category">${item.category}</div>
+                                        ${item.external_link ? `<a href="${item.external_link}" target="_blank" class="external-link-btn">View Project</a>` : ''}
+                                    </div>
+                            </div>
+                        </a>
+                    </div>
+                `;
+                projectGrid.append(projectItem);
+            });
+            
+            // Update "More project" link visibility based on filtered results
+            const moreLink = $('.more.more-lg.more-total-lg');
+            if (page < totalPages) {
+                moreLink.show();
+            } else {
+                moreLink.hide();
+            }
+        }
+    });
+    </script>
 
 
   </body>

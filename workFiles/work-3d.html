@@ -6,7 +6,7 @@
     <meta name="description" content="Lewis">
     <meta name="author" content="Paul, Logan Cee">
 
-    <title>Lewis - Work Metro</title>
+    <title>Lewis - 3D Visualization</title>
 
     <!-- CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -287,8 +287,8 @@
                 <li class="active"><a data-text="Works" data-toggle="collapse" href="#menuWorks" role="button" aria-expanded="true" aria-controls="menuWorks">Works</a>
                   <div class="collapse show" id="menuWorks" data-parent="#accordion">
                     <ul>
-                      <li class="active"><a href="work-graphic.html" class="animsition-link" data-animsition-out-class="fade-out" data-text="Graphic and Design">Graphic and Design</a></li>
-                      <li><a href="work-3d.html" class="animsition-link" data-animsition-out-class="fade-out" data-text="Motion Picture/3D Visualization">Motion Picture/3D Visualization</a></li>
+                      <li><a href="work-graphic.html" class="animsition-link" data-animsition-out-class="fade-out" data-text="Graphic and Design">Graphic and Design</a></li>
+                      <li class="active"><a href="work-3d.html" class="animsition-link" data-animsition-out-class="fade-out" data-text="Motion Picture/3D Visualization">Motion Picture/3D Visualization</a></li>
                       <li><a href="work-web.html" class="animsition-link" data-animsition-out-class="fade-out" data-text="Web Design and Development">Web Design and Development</a></li>
                       <li><a href="work-videos.html" class="animsition-link" data-animsition-out-class="fade-out" data-text="Videos">Videos</a></li>
                     </ul>
@@ -325,18 +325,18 @@
             <div class="row justify-content-md-center">
               <div class="col-lg-10">
                 <h3 class="section-item-title-xs">featured works</h3>
-                <h1 class="h2-flash font-abril">Graphic & Design</h1>
-                <div class="lead lead-lg">We specialize in crafting visually compelling assets that elevate your brand and communicate your message with clarity. From minimalist logotypes to full campaign visuals, our design team blends creativity with strategic intent to deliver:</div>
+                <h1 class="h2-flash font-abril">3D Visualization & Motion</h1>
+                <div class="lead lead-lg">We bring ideas to life through cutting-edge 3D visualization and motion graphics that captivate audiences and drive engagement. From architectural renderings to product visualizations, our 3D team creates immersive experiences that tell your story:</div>
                 <div class="mt80">
-                  <h3 class="mb40 fs30 font-libre"><strong>Our Design Services</strong></h3>
+                  <h3 class="mb40 fs30 font-libre"><strong>Our 3D Services</strong></h3>
                   <div class="fs18 lh-md">
                     <ul class="mb30 text-grey">
-                      <li><strong>Logo Systems</strong>: Timeless, scalable designs tailored to your brand identity.</li>
-                      <li><strong>Print Collateral</strong>: Brochures, flyers, posters, and packaging that drive engagement.</li>
-                      <li><strong>Digital Assets</strong>: Social media graphics, UI elements, and promotional banners.</li>
-                      <li><strong>Illustration & Concept Art</strong>: Custom visuals that bring ideas to life across media.</li>
+                      <li><strong>3D Product Visualization</strong>: Photorealistic renders that showcase products from every angle.</li>
+                      <li><strong>Exhibition Stall Designs</strong>: Immersive 3D environments for trade shows and exhibitions.</li>
+                      <li><strong>Architectural Visualization</strong>: Detailed 3D models and walkthroughs for real estate and construction.</li>
+                      <li><strong>Motion Graphics</strong>: Dynamic animations that bring static designs to life.</li>
                     </ul>
-                    <p class="mb30 text-grey">Whether you're launching a startup or refreshing an established brand, our design approach ensures consistency, impact, and user resonance.</p>
+                    <p class="mb30 text-grey">From concept to final render, we use industry-leading software and techniques to create stunning 3D visuals that help you communicate complex ideas with clarity and impact.</p>
                   </div>
                 </div>
                 <br/>
@@ -444,8 +444,8 @@
     <!-- Custom script for dynamic content -->
     <script>
     $(document).ready(function() {
-        // Filter Graphic items only
-        const graphicItems = combinedJsonImages.filter(item => item.page === 'Graphic');
+        // Filter 3D Visualization items only
+        const graphicItems = combinedJsonImages.filter(item => item.page === '3DVisualization Works');
         
         // Get unique categories
         const categories = [...new Set(graphicItems.map(item => item.category))];

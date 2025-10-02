@@ -6,426 +6,499 @@ const combinedJsonImages = [
     "link": "3DVisualization Works/3D Product Visualization/image1.jpg",
     "page": "3DVisualization Works",
     "category": "3D Product Visualization",
-    "date": "2019-02-28"
+    "date": "2019-02-28",
+    "description": "Realistic 3D rendering service"
   },
   {
     "name": "image2",
     "link": "3DVisualization Works/3D Product Visualization/image2.jpg",
     "page": "3DVisualization Works",
     "category": "3D Product Visualization",
-    "date": "2021-05-03"
+    "date": "2021-05-03",
+    "description": "Creative 3D visualization solution"
   },
   {
     "name": "image3",
     "link": "3DVisualization Works/3D Product Visualization/image3.jpg",
     "page": "3DVisualization Works",
     "category": "3D Product Visualization",
-    "date": "2022-08-24"
+    "date": "2022-08-24",
+    "description": "Creative 3D product showcase"
   },
   {
     "name": "image4",
     "link": "3DVisualization Works/3D Product Visualization/image4.jpg",
     "page": "3DVisualization Works",
     "category": "3D Product Visualization",
-    "date": "2023-05-23"
+    "date": "2023-05-23",
+    "description": "Creative 3D visualization solution"
   },
   {
     "name": "image5",
     "link": "3DVisualization Works/3D Product Visualization/image5.png",
     "page": "3DVisualization Works",
     "category": "3D Product Visualization",
-    "date": "2020-09-21"
+    "date": "2020-09-21",
+    "description": "Professional 3D rendering solution"
   },
   {
     "name": "image6",
     "link": "3DVisualization Works/3D Product Visualization/image6.png",
     "page": "3DVisualization Works",
     "category": "3D Product Visualization",
-    "date": "2023-02-20"
+    "date": "2023-02-20",
+    "description": "Realistic 3D rendering service"
   },
   {
     "name": "image7",
     "link": "3DVisualization Works/3D Product Visualization/image7.jpg",
     "page": "3DVisualization Works",
     "category": "3D Product Visualization",
-    "date": "2020-08-17"
+    "date": "2020-08-17",
+    "description": "Creative 3D product showcase"
   },
   {
     "name": "image1",
     "link": "3DVisualization Works/Exhibition Stall Designs/image1.jpg",
     "page": "3DVisualization Works",
     "category": "Exhibition Stall Designs",
-    "date": "2020-03-12"
+    "date": "2020-03-12",
+    "description": "Professional exhibition stall design"
   },
   {
     "name": "image2",
     "link": "3DVisualization Works/Exhibition Stall Designs/image2.jpg",
     "page": "3DVisualization Works",
     "category": "Exhibition Stall Designs",
-    "date": "2019-10-17"
+    "date": "2019-10-17",
+    "description": "Creative exhibition space approach"
   },
   {
     "name": "image3",
     "link": "3DVisualization Works/Exhibition Stall Designs/image3.jpg",
     "page": "3DVisualization Works",
     "category": "Exhibition Stall Designs",
-    "date": "2019-10-22"
+    "date": "2019-10-22",
+    "description": "Professional exhibition design service"
   },
   {
     "name": "image4",
     "link": "3DVisualization Works/Exhibition Stall Designs/image4.jpg",
     "page": "3DVisualization Works",
     "category": "Exhibition Stall Designs",
-    "date": "2020-05-19"
+    "date": "2020-05-19",
+    "description": "Professional exhibition solution"
   },
   {
     "name": "image5",
     "link": "3DVisualization Works/Exhibition Stall Designs/image5.jpg",
     "page": "3DVisualization Works",
     "category": "Exhibition Stall Designs",
-    "date": "2024-06-25"
+    "date": "2024-06-25",
+    "description": "Creative exhibition space solution"
   },
   {
     "name": "image6",
     "link": "3DVisualization Works/Exhibition Stall Designs/image6.jpg",
     "page": "3DVisualization Works",
     "category": "Exhibition Stall Designs",
-    "date": "2019-03-27"
+    "date": "2019-03-27",
+    "description": "Creative exhibition design strategy"
   },
   {
     "name": "image7",
     "link": "3DVisualization Works/Exhibition Stall Designs/image7.jpg",
     "page": "3DVisualization Works",
     "category": "Exhibition Stall Designs",
-    "date": "2022-04-07"
+    "date": "2022-04-07",
+    "description": "Creative exhibition space solution"
   },
   {
     "name": "image8",
     "link": "3DVisualization Works/Exhibition Stall Designs/image8.jpg",
     "page": "3DVisualization Works",
     "category": "Exhibition Stall Designs",
-    "date": "2024-04-18"
+    "date": "2024-04-18",
+    "description": "Professional exhibition stall design"
   },
   {
     "name": "image9",
     "link": "3DVisualization Works/Exhibition Stall Designs/image9.jpg",
     "page": "3DVisualization Works",
     "category": "Exhibition Stall Designs",
-    "date": "2022-03-03"
+    "date": "2022-03-03",
+    "description": "Strategic exhibition stall layout"
   },
   {
     "name": "image1",
     "link": "Graphic/Campaign Design/image1.jpg",
     "page": "Graphic",
     "category": "Campaign Design",
-    "date": "2019-01-15"
+    "date": "2019-01-15",
+    "description": "Eye-catching design that drives engagement"
   },
   {
     "name": "image10",
     "link": "Graphic/Campaign Design/image10.jpg",
     "page": "Graphic",
     "category": "Campaign Design",
-    "date": "2021-09-23"
+    "date": "2021-09-23",
+    "description": "Modern design approach for digital campaigns",
+    "external_link": "https://www.youtube.com/watch?v=abc123def456"
   },
   {
     "name": "image11",
     "link": "Graphic/Campaign Design/image11.jpg",
     "page": "Graphic",
     "category": "Campaign Design",
-    "date": "2019-01-10"
+    "date": "2019-01-10",
+    "description": "Bold and impactful campaign design that captures attention",
+    "external_link": "https://www.linkedin.com/posts/username_project-123456789"
   },
   {
     "name": "image2",
     "link": "Graphic/Campaign Design/image2.jpg",
     "page": "Graphic",
     "category": "Campaign Design",
-    "date": "2019-06-27"
+    "date": "2019-06-27",
+    "description": "Eye-catching design that drives engagement"
   },
   {
     "name": "image3",
     "link": "Graphic/Campaign Design/image3.jpg",
     "page": "Graphic",
     "category": "Campaign Design",
-    "date": "2019-05-18"
+    "date": "2019-05-18",
+    "description": "Bold and impactful campaign design that captures attention"
   },
   {
     "name": "image4",
     "link": "Graphic/Campaign Design/image4.jpg",
     "page": "Graphic",
     "category": "Campaign Design",
-    "date": "2024-04-27"
+    "date": "2024-04-27",
+    "description": "Eye-catching design that drives engagement"
   },
   {
     "name": "image5",
     "link": "Graphic/Campaign Design/image5.jpg",
     "page": "Graphic",
     "category": "Campaign Design",
-    "date": "2019-08-24"
+    "date": "2019-08-24",
+    "description": "Engaging campaign visuals that resonate",
+    "external_link": "https://www.linkedin.com/posts/username_project-123456789"
   },
   {
     "name": "image6",
     "link": "Graphic/Campaign Design/image6.jpg",
     "page": "Graphic",
     "category": "Campaign Design",
-    "date": "2019-03-25"
+    "date": "2019-03-25",
+    "description": "Strategic visual design for campaign success",
+    "external_link": "https://www.deviantart.com/username/art/project-title-123456789"
   },
   {
     "name": "image7",
     "link": "Graphic/Campaign Design/image7.jpg",
     "page": "Graphic",
     "category": "Campaign Design",
-    "date": "2021-03-21"
+    "date": "2021-03-21",
+    "description": "Modern design approach for digital campaigns",
+    "external_link": "https://www.linkedin.com/posts/username_project-123456789"
   },
   {
     "name": "image8",
     "link": "Graphic/Campaign Design/image8.jpg",
     "page": "Graphic",
     "category": "Campaign Design",
-    "date": "2023-06-20"
+    "date": "2023-06-20",
+    "description": "Eye-catching design that drives engagement"
   },
   {
     "name": "image9",
     "link": "Graphic/Campaign Design/image9.jpg",
     "page": "Graphic",
     "category": "Campaign Design",
-    "date": "2024-02-10"
+    "date": "2024-02-10",
+    "description": "Professional campaign design that stands out"
   },
   {
     "name": "image1",
     "link": "Graphic/Logo Designs/image1.jpg",
     "page": "Graphic",
     "category": "Logo Designs",
-    "date": "2024-07-15"
+    "date": "2024-07-15",
+    "description": "Distinctive logo that represents the brand"
   },
   {
     "name": "image2",
     "link": "Graphic/Logo Designs/image2.jpg",
     "page": "Graphic",
     "category": "Logo Designs",
-    "date": "2020-12-28"
+    "date": "2020-12-28",
+    "description": "Professional branding solution"
   },
   {
     "name": "image3",
     "link": "Graphic/Logo Designs/image3.jpg",
     "page": "Graphic",
     "category": "Logo Designs",
-    "date": "2022-05-02"
+    "date": "2022-05-02",
+    "description": "Creative brand identity design"
   },
   {
     "name": "image4",
     "link": "Graphic/Logo Designs/image4.jpg",
     "page": "Graphic",
     "category": "Logo Designs",
-    "date": "2018-10-20"
+    "date": "2018-10-20",
+    "description": "Professional branding solution",
+    "external_link": "https://dribbble.com/shots/12345678-project-title"
   },
   {
     "name": "image5",
     "link": "Graphic/Logo Designs/image5.jpg",
     "page": "Graphic",
     "category": "Logo Designs",
-    "date": "2022-04-18"
+    "date": "2022-04-18",
+    "description": "Distinctive logo that represents the brand",
+    "external_link": "https://www.behance.net/gallery/123456789/project-name"
   },
   {
     "name": "image6",
     "link": "Graphic/Logo Designs/image6.jpg",
     "page": "Graphic",
     "category": "Logo Designs",
-    "date": "2021-03-22"
+    "date": "2021-03-22",
+    "description": "Distinctive logo that represents the brand"
   },
   {
     "name": "image7",
     "link": "Graphic/Logo Designs/image7.jpg",
     "page": "Graphic",
     "category": "Logo Designs",
-    "date": "2019-07-09"
+    "date": "2019-07-09",
+    "description": "Modern logo with timeless appeal",
+    "external_link": "https://www.behance.net/gallery/123456789/project-name"
   },
   {
     "name": "image8",
     "link": "Graphic/Logo Designs/image8.jpg",
     "page": "Graphic",
     "category": "Logo Designs",
-    "date": "2021-03-16"
+    "date": "2021-03-16",
+    "description": "Professional branding solution"
   },
   {
     "name": "image1",
     "link": "Graphic/Print Media Designs/image1.jpg",
     "page": "Graphic",
     "category": "Print Media Designs",
-    "date": "2021-06-06"
+    "date": "2021-06-06",
+    "description": "Professional print layout design"
   },
   {
     "name": "image10",
     "link": "Graphic/Print Media Designs/image10.jpg",
     "page": "Graphic",
     "category": "Print Media Designs",
-    "date": "2018-06-01"
+    "date": "2018-06-01",
+    "description": "Professional print layout design"
   },
   {
     "name": "image2",
     "link": "Graphic/Print Media Designs/image2.jpg",
     "page": "Graphic",
     "category": "Print Media Designs",
-    "date": "2021-03-10"
+    "date": "2021-03-10",
+    "description": "Creative layout that enhances readability",
+    "external_link": "https://www.pinterest.com/pin/123456789012345678/"
   },
   {
     "name": "image3",
     "link": "Graphic/Print Media Designs/image3.jpg",
     "page": "Graphic",
     "category": "Print Media Designs",
-    "date": "2023-08-28"
+    "date": "2023-08-28",
+    "description": "Creative print design approach"
   },
   {
     "name": "image4",
     "link": "Graphic/Print Media Designs/image4.jpg",
     "page": "Graphic",
     "category": "Print Media Designs",
-    "date": "2020-05-02"
+    "date": "2020-05-02",
+    "description": "Professional design for print applications",
+    "external_link": "https://www.deviantart.com/username/art/project-title-123456789"
   },
   {
     "name": "image5",
     "link": "Graphic/Print Media Designs/image5.jpg",
     "page": "Graphic",
     "category": "Print Media Designs",
-    "date": "2022-09-11"
+    "date": "2022-09-11",
+    "description": "Professional print design for maximum impact"
   },
   {
     "name": "image6",
     "link": "Graphic/Print Media Designs/image6.jpg",
     "page": "Graphic",
     "category": "Print Media Designs",
-    "date": "2018-06-15"
+    "date": "2018-06-15",
+    "description": "Professional design for print applications"
   },
   {
     "name": "image7",
     "link": "Graphic/Print Media Designs/image7.jpg",
     "page": "Graphic",
     "category": "Print Media Designs",
-    "date": "2020-08-26"
+    "date": "2020-08-26",
+    "description": "Effective print media visual communication"
   },
   {
     "name": "image8",
     "link": "Graphic/Print Media Designs/image8.jpg",
     "page": "Graphic",
     "category": "Print Media Designs",
-    "date": "2021-09-03"
+    "date": "2021-09-03",
+    "description": "Professional design for print applications"
   },
   {
     "name": "image9",
     "link": "Graphic/Print Media Designs/image9.jpg",
     "page": "Graphic",
     "category": "Print Media Designs",
-    "date": "2020-08-01"
+    "date": "2020-08-01",
+    "description": "Professional print layout design",
+    "external_link": "https://www.behance.net/gallery/123456789/project-name"
   },
   {
     "name": "image1",
     "link": "Graphic/Social Media/image1.jpg",
     "page": "Graphic",
     "category": "Social Media",
-    "date": "2024-04-22"
+    "date": "2024-04-22",
+    "description": "Creative social media content design"
   },
   {
     "name": "image2",
     "link": "Graphic/Social Media/image2.jpg",
     "page": "Graphic",
     "category": "Social Media",
-    "date": "2022-06-04"
+    "date": "2022-06-04",
+    "description": "Eye-catching social media graphics"
   },
   {
     "name": "image3",
     "link": "Graphic/Social Media/image3.jpg",
     "page": "Graphic",
     "category": "Social Media",
-    "date": "2019-03-28"
+    "date": "2019-03-28",
+    "description": "Eye-catching social media graphics"
   },
   {
     "name": "image4",
     "link": "Graphic/Social Media/image4.jpg",
     "page": "Graphic",
     "category": "Social Media",
-    "date": "2022-10-22"
+    "date": "2022-10-22",
+    "description": "Engaging social media visual approach"
   },
   {
     "name": "image5",
     "link": "Graphic/Social Media/image5.jpg",
     "page": "Graphic",
     "category": "Social Media",
-    "date": "2018-11-07"
+    "date": "2018-11-07",
+    "description": "Strategic social media visual content"
   },
   {
     "name": "image6",
     "link": "Graphic/Social Media/image6.jpg",
     "page": "Graphic",
     "category": "Social Media",
-    "date": "2023-11-16"
+    "date": "2023-11-16",
+    "description": "Creative social media design solution"
   },
   {
     "name": "image7",
     "link": "Graphic/Social Media/image7.jpg",
     "page": "Graphic",
     "category": "Social Media",
-    "date": "2020-04-19"
+    "date": "2020-04-19",
+    "description": "Engaging social media visual approach",
+    "external_link": "https://www.pinterest.com/pin/123456789012345678/"
   },
   {
     "name": "image8",
     "link": "Graphic/Social Media/image8.jpg",
     "page": "Graphic",
     "category": "Social Media",
-    "date": "2019-08-28"
+    "date": "2019-08-28",
+    "description": "Professional social media graphics"
   },
   {
     "name": "image1",
     "link": "Graphic/Logo Designs/logo/image1.png",
     "page": "Graphic",
     "category": "logo",
-    "date": "2019-10-21"
+    "date": "2019-10-21",
+    "description": "Creative visual approach"
   },
   {
     "name": "image1",
     "link": "Videos/image1.png",
     "page": "Videos",
     "category": "Videos",
-    "date": "2020-02-23"
+    "date": "2020-02-23",
+    "description": "Professional video storytelling"
   },
   {
     "name": "image2",
     "link": "Videos/image2.jpg",
     "page": "Videos",
     "category": "Videos",
-    "date": "2018-06-22"
+    "date": "2018-06-22",
+    "description": "Engaging video content solution"
   },
   {
     "name": "image3",
     "link": "Videos/image3.png",
     "page": "Videos",
     "category": "Videos",
-    "date": "2020-08-12"
+    "date": "2020-08-12",
+    "description": "Professional video storytelling"
   },
   {
     "name": "image4",
     "link": "Videos/image4.png",
     "page": "Videos",
     "category": "Videos",
-    "date": "2019-03-26"
+    "date": "2019-03-26",
+    "description": "Engaging video content solution"
   },
   {
     "name": "image5",
     "link": "Videos/image5.png",
     "page": "Videos",
     "category": "Videos",
-    "date": "2022-02-02"
+    "date": "2022-02-02",
+    "description": "Professional video production solution"
   },
   {
     "name": "image1",
     "link": "Web Design/image1.jpg",
     "page": "Web Design",
     "category": "Web Design",
-    "date": "2021-11-09"
+    "date": "2021-11-09",
+    "description": "Professional web design service"
   },
   {
     "name": "image2",
     "link": "Web Design/image2.jpg",
     "page": "Web Design",
     "category": "Web Design",
-    "date": "2022-03-21"
+    "date": "2022-03-21",
+    "description": "Creative web design approach"
   }
 ];
