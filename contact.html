@@ -34,7 +34,7 @@
   <body class="theme-orange fixed-footer fixed-footer-lg">
     <div class="animsition">
       <div class="wrapper parallax-start">
-        <header id="header" class="header header-fixed">
+        <header id="header" class="header header-fixed bg-white">
           <div class="container-fluid clearfix">
             <div class="brand">
               <a href="index.html">
@@ -65,7 +65,7 @@
 
           <div class="menu-main" id="accordion">
             <ul>
-              <li class="active"><a data-text="Home" href="index.html" role="button" aria-expanded="false"
+              <li><a data-text="Home" href="index.html" role="button" aria-expanded="false"
                   aria-controls="menuHome">Home</a>
               </li>
               <li><a data-text="Works" data-toggle="collapse" href="#menuWorks" role="button" aria-expanded="true"
@@ -100,7 +100,7 @@
                   </ul>
                 </div>
               </li>
-              <li><a href="contact.html" class="animsition-link" data-animsition-out-class="fade-out"
+              <li class="active"><a href="contact.html" class="animsition-link" data-animsition-out-class="fade-out"
                   data-text="Contact">Contact</a></li>
             </ul>
           </div>
@@ -146,7 +146,7 @@
         <div class="container-fluid">
           <div class="image mask-skew wow fadeIn" data-wow-offset="150" data-wow-duration="0.2s" data-wow-delay=".3s">
             <div class="mask wow slideInLeft" data-wow-offset="150" data-wow-duration="1.2s" data-wow-delay=".3s"><div class="inside"></div></div>
-            <img src="img/pic161.jpg" alt="" class="img-fluid" />
+            <img src="img/Contact us header wide.png" alt="" class="img-fluid" />
           </div>
         </div>
 
@@ -154,26 +154,44 @@
           <div class="section-item">
             <div class="container wow fadeInUp" data-wow-delay=".2s">
               <h3 class="fs36 mb120">Get In Touch</h3>
-              <form action="#" class="text-left">
+              <form action="https://api.web3forms.com/submit" method="POST" class="text-left" id="contact-form">
+                <input type="hidden" name="access_key" value="6f401342-5380-4aeb-aed4-94dd86bef7db">
+                <input type="hidden" name="subject" value="New Contact Form Submission from YardnVision Website">
+                <input type="hidden" name="from_name" value="YardnVision Contact Form">
+                <input type="hidden" name="redirect" value="true">
+                <input type="hidden" name="redirect_url" value="https://yourwebsite.com/contact.html?success=true">
+                
                 <div class="row">
                   <div class="col-sm-4 mb30">
-                    <label class="label-custom">Name</label>
-                    <input type="text" class="form-control form-control-custom" placeholder="Your name" value="Daniel Frankton|" />
+                    <label class="label-custom">Name *</label>
+                    <input type="text" name="name" class="form-control form-control-custom" placeholder="Your name" required />
                   </div>
                   <div class="col-sm-4 mb30">
-                    <label class="label-custom">Email</label>
-                    <input type="text" class="form-control form-control-custom" placeholder="Your Email Address" />
+                    <label class="label-custom">Email *</label>
+                    <input type="email" name="email" class="form-control form-control-custom" placeholder="Your Email Address" required />
                   </div>
                   <div class="col-sm-4 mb30">
-                    <label class="label-custom">subject (obtional)</label>
-                    <input type="text" class="form-control form-control-custom" placeholder="Title of email" />
+                    <label class="label-custom">Subject (Optional)</label>
+                    <input type="text" name="subject" class="form-control form-control-custom" placeholder="Title of email" />
                   </div>
                   <div class="col-sm-12 mb30">
-                    <label class="label-custom">message</label>
-                    <textarea rows="9" cols="30" class="form-control form-control-custom" placeholder="Write your message here"></textarea>
+                    <label class="label-custom">Message *</label>
+                    <textarea name="message" rows="9" cols="30" class="form-control form-control-custom" placeholder="Write your message here" required></textarea>
                   </div>
                 </div>
-                <div class="mt40 text-center"><button class="btn btn-link fs18 text-black text-underline">send message</button></div>
+                <div class="mt40 text-center">
+                  <button type="submit" class="btn btn-link fs18 text-black text-underline">send message</button>
+                </div>
+                
+                <!-- Success/Error Messages -->
+                <div id="form-messages" class="mt-3" style="display: none;">
+                  <div class="alert alert-success" id="success-message" style="display: none;">
+                    Thank you! Your message has been sent successfully.
+                  </div>
+                  <div class="alert alert-danger" id="error-message" style="display: none;">
+                    Sorry, there was an error sending your message. Please try again.
+                  </div>
+                </div>
               </form>
             </div>
           </div>
@@ -184,12 +202,18 @@
       <div class="footer">
         <div class="footer-flash-about home-flash-dark">
           <div class="container">
-            Tell us more about what you want to accomplish with your organisation. We help you think of possible solutions in an ever-changing digital world.
-            <div class="mt-4"><a href="mailto:yardnvision@gmail.com" class="underline"><strong>yardnvision@gmail.com</strong></a></div>
+            Tell us more about what you want to accomplish with your organisation. We help you think of possible
+            solutions in an ever-changing digital world.
+            <div class="mt-4"><a href="mailto:yardnvision@gmail.com"
+                class="underline"><strong>yardnvision@gmail.com</strong></a></div>
           </div>
         </div>
 
-        <div class="home-flash-dark pt-0 pb-0"><div class="container"><hr class="mt-0 mb-0"></div></div>
+        <div class="home-flash-dark pt-0 pb-0">
+          <div class="container">
+            <hr class="mt-0 mb-0">
+          </div>
+        </div>
 
         <div class="footer-flash home-flash-dark">
           <div class="container">
@@ -197,29 +221,30 @@
               <div class="row">
                 <div class="col-md-4 col-6 mb-5">
                   <h5>Office</h5>
-                    <div class="contact-item">106, Gaurishankar CHS, Bldg No.1,Masrani Lane,Near<br /> Mumbai-&nbsp;400070</div>
-                    <div class="contact-item"><a href="mailto:yardnvision@gmail.com">yardnvision@gmail.com</a></div>
-                    <div class="contact-item"><a href="tel:+919594272022" class="phone-link">+91 9594272022</a></div>
+                  <div class="contact-item">106, Gaurishankar CHS, Bldg No.1,Masrani Lane,Near<br /> Mumbai-&nbsp;400070
                   </div>
+                  <div class="contact-item"><a href="mailto:yardnvision@gmail.com">yardnvision@gmail.com</a></div>
+                  <div class="contact-item"><a href="tel:+919594272022" class="phone-link">+91 9594272022</a></div>
+                </div>
 
-                  <div class="col-md-3 col-6 mb-5">
-                    <h5>help</h5>
-                    <ul class="footer-nav">
-                      <li><a href="#"></a></li>
-                      <li><a href="#">Terms & Conditions</a></li>
-                      <li><a href="#">Privacy Policy</a></li>
-                      <li><a href="#">Help</a></li>
-                      <li><a href="#">Services</a></li>
-                    </ul>
-                  </div>
+                <div class="col-md-3 col-6 mb-5">
+                  <h5>help</h5>
+                  <ul class="footer-nav">
+                    <li><a href="#"></a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Services</a></li>
+                  </ul>
+                </div>
 
-                  <div class="col-md-2 col-6 mb-5">
-                    <h5>quick links</h5>
-                    <ul class="footer-nav">
-                      <li><a href="#">About</a></li>
-                      <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                  </div>
+                <div class="col-md-2 col-6 mb-5">
+                  <h5>quick links</h5>
+                  <ul class="footer-nav">
+                    <li><a href="#">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
 
                 <div class="col-md-3 col-6 mb-5">
                   <ul class="social social-rounded">
@@ -233,7 +258,8 @@
             <div class="site-info">
               <div class="row">
                 <div class="col-6">
-                  <div class="copyright text-left">&copy; 2019 <strong>YardnVision Enterprises</strong>. All Rights Reserved.</div>
+                  <div class="copyright text-left">&copy; 2019 <strong>YnV Enterprises</strong>. All Rights Reserved.
+                  </div>
                 </div>
               </div>
             </div>
@@ -272,7 +298,43 @@
               .setTween('.full-image-dark', {backgroundPosition: '50% 100%', ease: Linear.easeNone})
               .addTo(controller);
 
+        // Contact form handling
+        $('#contact-form').on('submit', function(e) {
+          e.preventDefault();
+          
+          // Show loading state
+          var submitBtn = $(this).find('button[type="submit"]');
+          var originalText = submitBtn.text();
+          submitBtn.text('Sending...').prop('disabled', true);
+          
+          // Hide previous messages
+          $('#form-messages').hide();
+          $('#success-message, #error-message').hide();
+          
+          // Submit form
+          $.ajax({
+            url: $(this).attr('action'),
+            method: 'POST',
+            data: $(this).serialize(),
+            success: function(response) {
+              $('#success-message').show();
+              $('#form-messages').show();
+              $('#contact-form')[0].reset();
+              submitBtn.text(originalText).prop('disabled', false);
+            },
+            error: function() {
+              $('#error-message').show();
+              $('#form-messages').show();
+              submitBtn.text(originalText).prop('disabled', false);
+            }
+          });
+        });
 
+        // Check for success parameter in URL
+        if (window.location.search.includes('success=true')) {
+          $('#success-message').show();
+          $('#form-messages').show();
+        }
       });
     </script>
 

@@ -200,27 +200,27 @@
               </div>
             </div>
             <div class="row no-gutters services-flash">
-              <a href="work-listing-gd.html" class="col-sm-6 col-md-3 service-item">
+              <a href="workFiles/work-graphic.html" class="col-sm-6 col-md-3 service-item">
                 <div class="service-item-title">Graphic Design</div>
                 <div class="service-item-descr">Help business with their brading identity system better</div>
                 <div class="service-item-icon"><i class="icon-design-graphic"></i></div>
                 <div class="service-item-plus"></div>
               </a>
-              <a href="work-listing-web.html" class="col-sm-6 col-md-3 service-item">
+              <a href="workFiles/work-web.html" class="col-sm-6 col-md-3 service-item">
                 <div class="service-item-title">Web &amp; Mobile Design</div>
                 <div class="service-item-descr">Reach out your clients better through website &amp; mobile app</div>
                 <div class="service-item-icon"><i class="icon-design-web"></i></div>
                 <div class="service-item-plus"></div>
               </a>
-              <a href="work-listing-3d.html" class="col-sm-6 col-md-3 service-item">
+              <a href="workFiles/work-3d.html" class="col-sm-6 col-md-3 service-item">
                 <div class="service-item-title">Motion Picture / 3d Visualization</div>
                 <div class="service-item-descr">Fueling imagination and bringing stories to life through captivating
                   visuals</div>
                 <div class="service-item-icon"><i class="icon-marketing"></i></div>
                 <div class="service-item-plus"></div>
               </a>
-              <a href="work-listing-photo.html" class="col-sm-6 col-md-3 service-item">
-                <div class="service-item-title">photography</div>
+              <a href="workFiles/work-videos.html" class="col-sm-6 col-md-3 service-item">
+                <div class="service-item-title">Photography and Videos</div>
                 <div class="service-item-descr">Improve quality of product with high resolution photos</div>
                 <div class="service-item-icon"><i class="icon-photography"></i></div>
                 <div class="service-item-plus"></div>
@@ -236,20 +236,21 @@
           <div class="flash-item-nav item-nav-4"><a href="#works">Works</a></div>
           <div class="container">
             <div class="project-list-flash row no-gutters a-grid">
-              
+              <div class="grid-item col-sm-6">
+                <div class="project-list-title">
+                  <h3 class="section-item-title">featured works</h3>
+                  <h2 class="font-abril fs36">Bigger, Bolder &amp;&nbsp;Better</h2>
+                </div>
+              </div>
+              <!-- Dynamic project items will be populated here -->
               <div class="grid-item col-sm-6">
                 <div class="project-item-more">
-                  <div class="more more-lg"><a href="work-grid.html">More project <i
-                        class="icon ion-ios-arrow-right"></i></a></div>
+                  <div class="more more-lg"><a href="work-grid.html">More project <i class="icon ion-ios-arrow-right"></i></a></div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div>
-        <img src="../YnV/image/temp/Screenshot (34).png" alt="temp image" style="max-width:100%; height:auto; display:block;">
+        </div>          
       </div>
 
       <div class="footer">
@@ -342,10 +343,73 @@
   <!-- <script src="js/debug.addIndicators.js"></script> -->
   <script src="js/jquery.viewport.js"></script>
   <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
+    
+    <!-- Include combined JSON data -->
+    <script src="combined-json-images.js"></script>
 
   <script>
     $(window).on('load', function () {
+      // Populate featured works section
+      function populateFeaturedWorks() {
+        // Get one item from each content type
+        const graphicItems = combinedJsonImages.filter(item => item.page === 'Graphic');
+        const webItems = combinedJsonImages.filter(item => item.page === 'Web Design');
+        const threeDItems = combinedJsonImages.filter(item => item.page === '3DVisualization Works');
+        
+        // Select one random item from each type
+        const featuredGraphic = graphicItems[Math.floor(Math.random() * graphicItems.length)];
+        const featuredWeb = webItems[Math.floor(Math.random() * webItems.length)];
+        const featured3D = threeDItems[Math.floor(Math.random() * threeDItems.length)];
+        
+        // Create project items HTML
+        const projectItems = [
+          {
+            item: featuredGraphic,
+            link: 'workFiles/work-graphic.html',
+            title: 'Graphic Design'
+          },
+          {
+            item: featuredWeb,
+            link: 'workFiles/work-web.html', 
+            title: 'Web Design'
+          },
+          {
+            item: featured3D,
+            link: 'workFiles/work-3d.html',
+            title: '3D Visualization'
+          }
+        ];
+        
+        // Generate HTML for each project item
+        let projectItemsHTML = '';
+        projectItems.forEach(project => {
+          const imagePath = 'image/' + project.item.link;
+          const year = project.item.date.split('-')[0];
+          const category = project.item.category;
+          
+          projectItemsHTML += `
+            <div class="grid-item col-sm-6">
+              <a href="${project.link}" class="project-item">
+                <div class="project-carousel-photo" style="background-image:url(${imagePath}); background-size: cover; background-position: center;"></div>
+                <div class="project-carousel-date">${year}</div>
+                <div class="project-carousel-detail">
+                  <h2 class="project-carousel-title">${project.item.name}</h2>
+                  <div class="project-carousel-go"><i class="icon ion-ios-arrow-right"></i></div>
+                  <div class="project-carousel-category">${category}</div>
+                </div>
+              </a>
+            </div>
+          `;
+        });
+        
+        // Insert the generated HTML before the "More project" item
+        $('.project-item-more').before(projectItemsHTML);
+      }
+      
+      // Call the function to populate featured works
+      populateFeaturedWorks();
+      
       // init controller
       var controller = new ScrollMagic.Controller();
 
