@@ -1408,10 +1408,10 @@ input:focus {
   color: #999999;
 }
 
-.menu-main a,
-.menu-main a:hover {
+.menu-main a {
   position: relative;
   text-decoration: none;
+  display: inline-block;
 }
 
 .menu-main a:before {
@@ -1423,11 +1423,22 @@ input:focus {
   z-index: 2;
   overflow: hidden;
   white-space: nowrap;
+  left: 0;
+  top: 0;
 }
 
 .menu-main li.active > a:before,
 .menu-main a:hover:before {
-    width: 100%;
+  width: 100%;
+}
+
+/* Hide original text on hover */
+.menu-main a {
+  color: #999999;
+}
+
+.menu-main a:hover {
+  color: transparent;
 }
 
 .menu-footer {
