@@ -1,0 +1,431 @@
+// Combined JSON data from json-images directory
+// Total files: 61
+const combinedJsonImages = [
+  {
+    "name": "image1",
+    "link": "3DVisualization Works/3D Product Visualization/image1.jpg",
+    "page": "3DVisualization Works",
+    "category": "3D Product Visualization",
+    "date": "2019-02-28"
+  },
+  {
+    "name": "image2",
+    "link": "3DVisualization Works/3D Product Visualization/image2.jpg",
+    "page": "3DVisualization Works",
+    "category": "3D Product Visualization",
+    "date": "2021-05-03"
+  },
+  {
+    "name": "image3",
+    "link": "3DVisualization Works/3D Product Visualization/image3.jpg",
+    "page": "3DVisualization Works",
+    "category": "3D Product Visualization",
+    "date": "2022-08-24"
+  },
+  {
+    "name": "image4",
+    "link": "3DVisualization Works/3D Product Visualization/image4.jpg",
+    "page": "3DVisualization Works",
+    "category": "3D Product Visualization",
+    "date": "2023-05-23"
+  },
+  {
+    "name": "image5",
+    "link": "3DVisualization Works/3D Product Visualization/image5.png",
+    "page": "3DVisualization Works",
+    "category": "3D Product Visualization",
+    "date": "2020-09-21"
+  },
+  {
+    "name": "image6",
+    "link": "3DVisualization Works/3D Product Visualization/image6.png",
+    "page": "3DVisualization Works",
+    "category": "3D Product Visualization",
+    "date": "2023-02-20"
+  },
+  {
+    "name": "image7",
+    "link": "3DVisualization Works/3D Product Visualization/image7.jpg",
+    "page": "3DVisualization Works",
+    "category": "3D Product Visualization",
+    "date": "2020-08-17"
+  },
+  {
+    "name": "image1",
+    "link": "3DVisualization Works/Exhibition Stall Designs/image1.jpg",
+    "page": "3DVisualization Works",
+    "category": "Exhibition Stall Designs",
+    "date": "2020-03-12"
+  },
+  {
+    "name": "image2",
+    "link": "3DVisualization Works/Exhibition Stall Designs/image2.jpg",
+    "page": "3DVisualization Works",
+    "category": "Exhibition Stall Designs",
+    "date": "2019-10-17"
+  },
+  {
+    "name": "image3",
+    "link": "3DVisualization Works/Exhibition Stall Designs/image3.jpg",
+    "page": "3DVisualization Works",
+    "category": "Exhibition Stall Designs",
+    "date": "2019-10-22"
+  },
+  {
+    "name": "image4",
+    "link": "3DVisualization Works/Exhibition Stall Designs/image4.jpg",
+    "page": "3DVisualization Works",
+    "category": "Exhibition Stall Designs",
+    "date": "2020-05-19"
+  },
+  {
+    "name": "image5",
+    "link": "3DVisualization Works/Exhibition Stall Designs/image5.jpg",
+    "page": "3DVisualization Works",
+    "category": "Exhibition Stall Designs",
+    "date": "2024-06-25"
+  },
+  {
+    "name": "image6",
+    "link": "3DVisualization Works/Exhibition Stall Designs/image6.jpg",
+    "page": "3DVisualization Works",
+    "category": "Exhibition Stall Designs",
+    "date": "2019-03-27"
+  },
+  {
+    "name": "image7",
+    "link": "3DVisualization Works/Exhibition Stall Designs/image7.jpg",
+    "page": "3DVisualization Works",
+    "category": "Exhibition Stall Designs",
+    "date": "2022-04-07"
+  },
+  {
+    "name": "image8",
+    "link": "3DVisualization Works/Exhibition Stall Designs/image8.jpg",
+    "page": "3DVisualization Works",
+    "category": "Exhibition Stall Designs",
+    "date": "2024-04-18"
+  },
+  {
+    "name": "image9",
+    "link": "3DVisualization Works/Exhibition Stall Designs/image9.jpg",
+    "page": "3DVisualization Works",
+    "category": "Exhibition Stall Designs",
+    "date": "2022-03-03"
+  },
+  {
+    "name": "image1",
+    "link": "Graphic/Campaign Design/image1.jpg",
+    "page": "Graphic",
+    "category": "Campaign Design",
+    "date": "2019-01-15"
+  },
+  {
+    "name": "image10",
+    "link": "Graphic/Campaign Design/image10.jpg",
+    "page": "Graphic",
+    "category": "Campaign Design",
+    "date": "2021-09-23"
+  },
+  {
+    "name": "image11",
+    "link": "Graphic/Campaign Design/image11.jpg",
+    "page": "Graphic",
+    "category": "Campaign Design",
+    "date": "2019-01-10"
+  },
+  {
+    "name": "image2",
+    "link": "Graphic/Campaign Design/image2.jpg",
+    "page": "Graphic",
+    "category": "Campaign Design",
+    "date": "2019-06-27"
+  },
+  {
+    "name": "image3",
+    "link": "Graphic/Campaign Design/image3.jpg",
+    "page": "Graphic",
+    "category": "Campaign Design",
+    "date": "2019-05-18"
+  },
+  {
+    "name": "image4",
+    "link": "Graphic/Campaign Design/image4.jpg",
+    "page": "Graphic",
+    "category": "Campaign Design",
+    "date": "2024-04-27"
+  },
+  {
+    "name": "image5",
+    "link": "Graphic/Campaign Design/image5.jpg",
+    "page": "Graphic",
+    "category": "Campaign Design",
+    "date": "2019-08-24"
+  },
+  {
+    "name": "image6",
+    "link": "Graphic/Campaign Design/image6.jpg",
+    "page": "Graphic",
+    "category": "Campaign Design",
+    "date": "2019-03-25"
+  },
+  {
+    "name": "image7",
+    "link": "Graphic/Campaign Design/image7.jpg",
+    "page": "Graphic",
+    "category": "Campaign Design",
+    "date": "2021-03-21"
+  },
+  {
+    "name": "image8",
+    "link": "Graphic/Campaign Design/image8.jpg",
+    "page": "Graphic",
+    "category": "Campaign Design",
+    "date": "2023-06-20"
+  },
+  {
+    "name": "image9",
+    "link": "Graphic/Campaign Design/image9.jpg",
+    "page": "Graphic",
+    "category": "Campaign Design",
+    "date": "2024-02-10"
+  },
+  {
+    "name": "image1",
+    "link": "Graphic/Logo Designs/image1.jpg",
+    "page": "Graphic",
+    "category": "Logo Designs",
+    "date": "2024-07-15"
+  },
+  {
+    "name": "image2",
+    "link": "Graphic/Logo Designs/image2.jpg",
+    "page": "Graphic",
+    "category": "Logo Designs",
+    "date": "2020-12-28"
+  },
+  {
+    "name": "image3",
+    "link": "Graphic/Logo Designs/image3.jpg",
+    "page": "Graphic",
+    "category": "Logo Designs",
+    "date": "2022-05-02"
+  },
+  {
+    "name": "image4",
+    "link": "Graphic/Logo Designs/image4.jpg",
+    "page": "Graphic",
+    "category": "Logo Designs",
+    "date": "2018-10-20"
+  },
+  {
+    "name": "image5",
+    "link": "Graphic/Logo Designs/image5.jpg",
+    "page": "Graphic",
+    "category": "Logo Designs",
+    "date": "2022-04-18"
+  },
+  {
+    "name": "image6",
+    "link": "Graphic/Logo Designs/image6.jpg",
+    "page": "Graphic",
+    "category": "Logo Designs",
+    "date": "2021-03-22"
+  },
+  {
+    "name": "image7",
+    "link": "Graphic/Logo Designs/image7.jpg",
+    "page": "Graphic",
+    "category": "Logo Designs",
+    "date": "2019-07-09"
+  },
+  {
+    "name": "image8",
+    "link": "Graphic/Logo Designs/image8.jpg",
+    "page": "Graphic",
+    "category": "Logo Designs",
+    "date": "2021-03-16"
+  },
+  {
+    "name": "image1",
+    "link": "Graphic/Print Media Designs/image1.jpg",
+    "page": "Graphic",
+    "category": "Print Media Designs",
+    "date": "2021-06-06"
+  },
+  {
+    "name": "image10",
+    "link": "Graphic/Print Media Designs/image10.jpg",
+    "page": "Graphic",
+    "category": "Print Media Designs",
+    "date": "2018-06-01"
+  },
+  {
+    "name": "image2",
+    "link": "Graphic/Print Media Designs/image2.jpg",
+    "page": "Graphic",
+    "category": "Print Media Designs",
+    "date": "2021-03-10"
+  },
+  {
+    "name": "image3",
+    "link": "Graphic/Print Media Designs/image3.jpg",
+    "page": "Graphic",
+    "category": "Print Media Designs",
+    "date": "2023-08-28"
+  },
+  {
+    "name": "image4",
+    "link": "Graphic/Print Media Designs/image4.jpg",
+    "page": "Graphic",
+    "category": "Print Media Designs",
+    "date": "2020-05-02"
+  },
+  {
+    "name": "image5",
+    "link": "Graphic/Print Media Designs/image5.jpg",
+    "page": "Graphic",
+    "category": "Print Media Designs",
+    "date": "2022-09-11"
+  },
+  {
+    "name": "image6",
+    "link": "Graphic/Print Media Designs/image6.jpg",
+    "page": "Graphic",
+    "category": "Print Media Designs",
+    "date": "2018-06-15"
+  },
+  {
+    "name": "image7",
+    "link": "Graphic/Print Media Designs/image7.jpg",
+    "page": "Graphic",
+    "category": "Print Media Designs",
+    "date": "2020-08-26"
+  },
+  {
+    "name": "image8",
+    "link": "Graphic/Print Media Designs/image8.jpg",
+    "page": "Graphic",
+    "category": "Print Media Designs",
+    "date": "2021-09-03"
+  },
+  {
+    "name": "image9",
+    "link": "Graphic/Print Media Designs/image9.jpg",
+    "page": "Graphic",
+    "category": "Print Media Designs",
+    "date": "2020-08-01"
+  },
+  {
+    "name": "image1",
+    "link": "Graphic/Social Media/image1.jpg",
+    "page": "Graphic",
+    "category": "Social Media",
+    "date": "2024-04-22"
+  },
+  {
+    "name": "image2",
+    "link": "Graphic/Social Media/image2.jpg",
+    "page": "Graphic",
+    "category": "Social Media",
+    "date": "2022-06-04"
+  },
+  {
+    "name": "image3",
+    "link": "Graphic/Social Media/image3.jpg",
+    "page": "Graphic",
+    "category": "Social Media",
+    "date": "2019-03-28"
+  },
+  {
+    "name": "image4",
+    "link": "Graphic/Social Media/image4.jpg",
+    "page": "Graphic",
+    "category": "Social Media",
+    "date": "2022-10-22"
+  },
+  {
+    "name": "image5",
+    "link": "Graphic/Social Media/image5.jpg",
+    "page": "Graphic",
+    "category": "Social Media",
+    "date": "2018-11-07"
+  },
+  {
+    "name": "image6",
+    "link": "Graphic/Social Media/image6.jpg",
+    "page": "Graphic",
+    "category": "Social Media",
+    "date": "2023-11-16"
+  },
+  {
+    "name": "image7",
+    "link": "Graphic/Social Media/image7.jpg",
+    "page": "Graphic",
+    "category": "Social Media",
+    "date": "2020-04-19"
+  },
+  {
+    "name": "image8",
+    "link": "Graphic/Social Media/image8.jpg",
+    "page": "Graphic",
+    "category": "Social Media",
+    "date": "2019-08-28"
+  },
+  {
+    "name": "image1",
+    "link": "Graphic/Logo Designs/logo/image1.png",
+    "page": "Graphic",
+    "category": "logo",
+    "date": "2019-10-21"
+  },
+  {
+    "name": "image1",
+    "link": "Videos/image1.png",
+    "page": "Videos",
+    "category": "Videos",
+    "date": "2020-02-23"
+  },
+  {
+    "name": "image2",
+    "link": "Videos/image2.jpg",
+    "page": "Videos",
+    "category": "Videos",
+    "date": "2018-06-22"
+  },
+  {
+    "name": "image3",
+    "link": "Videos/image3.png",
+    "page": "Videos",
+    "category": "Videos",
+    "date": "2020-08-12"
+  },
+  {
+    "name": "image4",
+    "link": "Videos/image4.png",
+    "page": "Videos",
+    "category": "Videos",
+    "date": "2019-03-26"
+  },
+  {
+    "name": "image5",
+    "link": "Videos/image5.png",
+    "page": "Videos",
+    "category": "Videos",
+    "date": "2022-02-02"
+  },
+  {
+    "name": "image1",
+    "link": "Web Design/image1.jpg",
+    "page": "Web Design",
+    "category": "Web Design",
+    "date": "2021-11-09"
+  },
+  {
+    "name": "image2",
+    "link": "Web Design/image2.jpg",
+    "page": "Web Design",
+    "category": "Web Design",
+    "date": "2022-03-21"
+  }
+];
