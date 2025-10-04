@@ -1,6 +1,6 @@
 /*----------------------------------------------------------------
 
-	Template Name: Lewis - Creative Portfolio HTML Template 
+	Template Name: YardnVision - Creative Portfolio HTML Template 
 	Version: 1.0
 
 	-------------------------------------------------------------------------------*/

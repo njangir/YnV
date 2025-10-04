@@ -2,7 +2,7 @@
 // Total files: 61
 const combinedJsonImages = [
   {
-    "name": "image1",
+    "name": "Diamond Watch",
     "link": "3DVisualization Works/3D Product Visualization/image1.jpg",
     "page": "3DVisualization Works",
     "category": "3D Product Visualization",
@@ -10,7 +10,7 @@ const combinedJsonImages = [
     "description": "Realistic 3D rendering service"
   },
   {
-    "name": "image2",
+    "name": "Jewellry I",
     "link": "3DVisualization Works/3D Product Visualization/image2.jpg",
     "page": "3DVisualization Works",
     "category": "3D Product Visualization",
@@ -18,7 +18,7 @@ const combinedJsonImages = [
     "description": "Creative 3D visualization solution"
   },
   {
-    "name": "image3",
+    "name": "Jewellry II",
     "link": "3DVisualization Works/3D Product Visualization/image3.jpg",
     "page": "3DVisualization Works",
     "category": "3D Product Visualization",
@@ -26,7 +26,7 @@ const combinedJsonImages = [
     "description": "Creative 3D product showcase"
   },
   {
-    "name": "image4",
+    "name": "Jewellry III",
     "link": "3DVisualization Works/3D Product Visualization/image4.jpg",
     "page": "3DVisualization Works",
     "category": "3D Product Visualization",
@@ -34,7 +34,7 @@ const combinedJsonImages = [
     "description": "Creative 3D visualization solution"
   },
   {
-    "name": "image5",
+    "name": "Building Structure",
     "link": "3DVisualization Works/3D Product Visualization/image5.png",
     "page": "3DVisualization Works",
     "category": "3D Product Visualization",
@@ -42,7 +42,7 @@ const combinedJsonImages = [
     "description": "Professional 3D rendering solution"
   },
   {
-    "name": "image6",
+    "name": "Jewellry IV",
     "link": "3DVisualization Works/3D Product Visualization/image6.png",
     "page": "3DVisualization Works",
     "category": "3D Product Visualization",
@@ -50,7 +50,7 @@ const combinedJsonImages = [
     "description": "Realistic 3D rendering service"
   },
   {
-    "name": "image7",
+    "name": "Jewellry V",
     "link": "3DVisualization Works/3D Product Visualization/image7.jpg",
     "page": "3DVisualization Works",
     "category": "3D Product Visualization",
@@ -58,7 +58,7 @@ const combinedJsonImages = [
     "description": "Creative 3D product showcase"
   },
   {
-    "name": "image1",
+    "name": "d2h Exhibition Stall",
     "link": "3DVisualization Works/Exhibition Stall Designs/image1.jpg",
     "page": "3DVisualization Works",
     "category": "Exhibition Stall Designs",
@@ -66,7 +66,7 @@ const combinedJsonImages = [
     "description": "Professional exhibition stall design"
   },
   {
-    "name": "image2",
+    "name": "Recharge Exhibition Stall",
     "link": "3DVisualization Works/Exhibition Stall Designs/image2.jpg",
     "page": "3DVisualization Works",
     "category": "Exhibition Stall Designs",
@@ -74,7 +74,7 @@ const combinedJsonImages = [
     "description": "Creative exhibition space approach"
   },
   {
-    "name": "image3",
+    "name": "Ravi Mahajan Exhibition Stall",
     "link": "3DVisualization Works/Exhibition Stall Designs/image3.jpg",
     "page": "3DVisualization Works",
     "category": "Exhibition Stall Designs",
@@ -82,7 +82,7 @@ const combinedJsonImages = [
     "description": "Professional exhibition design service"
   },
   {
-    "name": "image4",
+    "name": "Laxmi Exhibition Stall",
     "link": "3DVisualization Works/Exhibition Stall Designs/image4.jpg",
     "page": "3DVisualization Works",
     "category": "Exhibition Stall Designs",
@@ -90,7 +90,7 @@ const combinedJsonImages = [
     "description": "Professional exhibition solution"
   },
   {
-    "name": "image5",
+    "name": "PS4 Exhibition Stall",
     "link": "3DVisualization Works/Exhibition Stall Designs/image5.jpg",
     "page": "3DVisualization Works",
     "category": "Exhibition Stall Designs",
@@ -98,7 +98,7 @@ const combinedJsonImages = [
     "description": "Creative exhibition space solution"
   },
   {
-    "name": "image6",
+    "name": "Ashoka Exhibition Stall",
     "link": "3DVisualization Works/Exhibition Stall Designs/image6.jpg",
     "page": "3DVisualization Works",
     "category": "Exhibition Stall Designs",
@@ -106,7 +106,7 @@ const combinedJsonImages = [
     "description": "Creative exhibition design strategy"
   },
   {
-    "name": "image7",
+    "name": "Un Wire Exhibition Stall",
     "link": "3DVisualization Works/Exhibition Stall Designs/image7.jpg",
     "page": "3DVisualization Works",
     "category": "Exhibition Stall Designs",
@@ -114,7 +114,7 @@ const combinedJsonImages = [
     "description": "Creative exhibition space solution"
   },
   {
-    "name": "image8",
+    "name": "Anmol Nayatara Exhibition Stall",
     "link": "3DVisualization Works/Exhibition Stall Designs/image8.jpg",
     "page": "3DVisualization Works",
     "category": "Exhibition Stall Designs",
@@ -122,7 +122,7 @@ const combinedJsonImages = [
     "description": "Professional exhibition stall design"
   },
   {
-    "name": "image9",
+    "name": "Ashoka Exhibition Stall II",
     "link": "3DVisualization Works/Exhibition Stall Designs/image9.jpg",
     "page": "3DVisualization Works",
     "category": "Exhibition Stall Designs",
@@ -130,7 +130,7 @@ const combinedJsonImages = [
     "description": "Strategic exhibition stall layout"
   },
   {
-    "name": "image1",
+    "name": "Virtual Event Banner",
     "link": "Graphic/Campaign Design/image1.jpg",
     "page": "Graphic",
     "category": "Campaign Design",
@@ -138,7 +138,7 @@ const combinedJsonImages = [
     "description": "Eye-catching design that drives engagement"
   },
   {
-    "name": "image10",
+    "name": "Gym Offer Poster",
     "link": "Graphic/Campaign Design/image10.jpg",
     "page": "Graphic",
     "category": "Campaign Design",
@@ -147,7 +147,7 @@ const combinedJsonImages = [
     "external_link": "https://www.youtube.com/watch?v=abc123def456"
   },
   {
-    "name": "image11",
+    "name": "Yes Bank Premier League",
     "link": "Graphic/Campaign Design/image11.jpg",
     "page": "Graphic",
     "category": "Campaign Design",
@@ -156,7 +156,7 @@ const combinedJsonImages = [
     "external_link": "https://www.linkedin.com/posts/username_project-123456789"
   },
   {
-    "name": "image2",
+    "name": "Pedalon Cycle Marathon Poster",
     "link": "Graphic/Campaign Design/image2.jpg",
     "page": "Graphic",
     "category": "Campaign Design",
@@ -164,7 +164,7 @@ const combinedJsonImages = [
     "description": "Eye-catching design that drives engagement"
   },
   {
-    "name": "image3",
+    "name": "Sysmex Scientific Seminar Poster",
     "link": "Graphic/Campaign Design/image3.jpg",
     "page": "Graphic",
     "category": "Campaign Design",
@@ -172,7 +172,7 @@ const combinedJsonImages = [
     "description": "Bold and impactful campaign design that captures attention"
   },
   {
-    "name": "image4",
+    "name": "Republik Rox Event Poster",
     "link": "Graphic/Campaign Design/image4.jpg",
     "page": "Graphic",
     "category": "Campaign Design",
@@ -180,7 +180,7 @@ const combinedJsonImages = [
     "description": "Eye-catching design that drives engagement"
   },
   {
-    "name": "image5",
+    "name": "Maersk",
     "link": "Graphic/Campaign Design/image5.jpg",
     "page": "Graphic",
     "category": "Campaign Design",
@@ -189,7 +189,7 @@ const combinedJsonImages = [
     "external_link": "https://www.linkedin.com/posts/username_project-123456789"
   },
   {
-    "name": "image6",
+    "name": "Alpha Gym and Fitness Center Poster",
     "link": "Graphic/Campaign Design/image6.jpg",
     "page": "Graphic",
     "category": "Campaign Design",
