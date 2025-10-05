@@ -220,50 +220,48 @@ function setupFilters() {
 }
 
 function createFilterControls() {
-    const careerSection = document.querySelector('.section');
-    if (!careerSection) return;
+    const filterContainer = document.getElementById('career-filters-container');
+    if (!filterContainer) return;
     
     const filterHTML = `
-        <div class="career-filters mb-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 mb-3">
-                        <label for="category-filter">Category:</label>
-                        <select id="category-filter" class="form-control">
-                            <option value="">All Categories</option>
-                            ${CareerDataManager.getCategories().map(cat => 
-                                `<option value="${cat}">${cat.charAt(0).toUpperCase() + cat.slice(1)}</option>`
-                            ).join('')}
-                        </select>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <label for="location-filter">Location:</label>
-                        <select id="location-filter" class="form-control">
-                            <option value="">All Locations</option>
-                            ${CareerDataManager.getLocations().map(loc => 
-                                `<option value="${loc}">${loc}</option>`
-                            ).join('')}
-                        </select>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <label for="type-filter">Job Type:</label>
-                        <select id="type-filter" class="form-control">
-                            <option value="">All Types</option>
-                            ${CareerDataManager.getJobTypes().map(type => 
-                                `<option value="${type}">${type}</option>`
-                            ).join('')}
-                        </select>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <label for="career-search">Search:</label>
-                        <input type="text" id="career-search" class="form-control" placeholder="Search jobs...">
-                    </div>
+        <div class="career-filters mb-4">
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <label for="category-filter">Category:</label>
+                    <select id="category-filter" class="form-control">
+                        <option value="">All Categories</option>
+                        ${CareerDataManager.getCategories().map(cat => 
+                            `<option value="${cat}">${cat.charAt(0).toUpperCase() + cat.slice(1)}</option>`
+                        ).join('')}
+                    </select>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="location-filter">Location:</label>
+                    <select id="location-filter" class="form-control">
+                        <option value="">All Locations</option>
+                        ${CareerDataManager.getLocations().map(loc => 
+                            `<option value="${loc}">${loc}</option>`
+                        ).join('')}
+                    </select>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="type-filter">Job Type:</label>
+                    <select id="type-filter" class="form-control">
+                        <option value="">All Types</option>
+                        ${CareerDataManager.getJobTypes().map(type => 
+                            `<option value="${type}">${type}</option>`
+                        ).join('')}
+                    </select>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="career-search">Search:</label>
+                    <input type="text" id="career-search" class="form-control" placeholder="Search jobs...">
                 </div>
             </div>
         </div>
     `;
     
-    careerSection.insertAdjacentHTML('afterbegin', filterHTML);
+    filterContainer.innerHTML = filterHTML;
 }
 
 function filterCareers() {
